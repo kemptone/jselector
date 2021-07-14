@@ -1,0 +1,14 @@
+{
+  "name": "jselector",
+  "version": "1.0.0",
+  "description": "Memoized Selector for use with Redux like mapStateToProps",
+  "main": "jselector.babel.js",
+  "scripts": {
+    "build": "babel ./jselector.js --out-file ./jselector.babel.js"
+  },
+  "author": "= <=>",
+  "license": "ISC",
+  "dependencies": {
+    "j" : "github:kemptone/j"
+  }
+}
