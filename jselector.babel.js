@@ -197,7 +197,7 @@ function buildLooseDigger(split) {
 
   var earlyReturn = split.length === 0 ? "return root" : "";
 
-  var body = earlyReturn ? earlyReturn : "let thing = root;\n\n    if (" + buildConditionals(split) + ")\n      return thing;\n      \n    if (thing !== undefined)\n      return thing";
+  var body = earlyReturn ? earlyReturn : "var thing = root;\n\n    if (" + buildConditionals(split) + ")\n      return thing;\n      \n    if (thing !== undefined)\n      return thing";
 
   return Function('root', body);
 }
