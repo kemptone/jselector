@@ -176,7 +176,7 @@ function buildLooseDigger (split) {
 
   const earlyReturn = split.length === 0 ? "return root" : ""
 
-  const body = earlyReturn ? earlyReturn : `let thing = root;
+  const body = earlyReturn ? earlyReturn : `var thing = root;
 
     if (${ buildConditionals(split) })
       return thing;
